@@ -1,10 +1,22 @@
-h1, h2 {
+/* Clase de Elemento */
+h1 {
+    font-size: 50px;
+}
+/* Clase no atada a ningún elemento */
+.centrado {
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+/* Clase atada a un elemento */
+p.color-fuente {
+    color: blue;
+    text-align: center;
+    font-size: 35px;
+}
+h2 {
     text-align: center;
 }
 img {
-    margin: 0 auto 0 auto;
     display: block;
-}
-p {
-    text-align: center;
+    margin: 0 auto 0 auto;
 }
