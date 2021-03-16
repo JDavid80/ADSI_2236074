@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="css/contactenos.css">
+</head>
+<body>
+    <h1>Contactenos</h1>
+    <form action="registrar-info.php" method="POST">
+        <fieldset>
+        <legend>Ingrese la información</legend>
+        <!-- Ingrese su nombre<br> -->
+        <input type="text" name="nombres" placeholder="Ingrese su nombre"><br><br>
+        Ingrese su apellidos<br>
+        <input type="text" name="apellidos"><br><br>
+        Ingrese su consulta, petición, queja o reclamo<br>
+        <textarea name="pregunta" cols="60" rows="5"></textarea><br><br>
+        Género<br>
+        <input type="radio" name="genero" value="Masculino">Masculino<br>
+        <input type="radio" name="genero" value="Femenino">Femenino<br>
+        <input type="radio" name="genero" value="Indeterminado">Indeterminado<br><br>
+        Tipo de Bicicleta de Interés<br>
+        <input type="checkbox" name="tipo-bicicleta" value="MTB">MTB<br>
+        <input type="checkbox" name="tipo-bicicleta" value="Ruta">Ruta<br>
+        <input type="checkbox" name="tipo-bicicleta" value="Hibrida">Híbrida<br>
+        <input type="checkbox" name="tipo-bicicleta" value="Electrica">Eléctrica<br><br>
+        Ciudad de Residencia<br>
+        <select name="ciudad">
+            <option value="Neiva">Neiva</option>
+            <option value="Pitalito">Pitalito</option>
+            <option value="Garzon">Garzón</option>
+            <option value="Timana">Timaná</option>
+            <option value="San Agustin">San Agustín</option>
+            <option value="Acevedo">Acevedo</option>
+            <option value="Oporapa">Oporapa</option>
+            <option value="Saladoblanco">Saladoblanco</option>
+        </select><br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>
