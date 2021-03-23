@@ -1,6 +1,6 @@
 /* Clase de Elemento */
 h1 {
-    font-size: 50px;
+    font-size: 80px;
 }
 /* Clase no atada a ningún elemento */
 .centrado {
@@ -12,9 +12,7 @@ p.color-fuente {
     color: blue;
     text-align: center;
     font-size: 35px;
-}
-h2 {
-    text-align: center;
+    font-style: italic;
 }
 img {
     display: block;
@@ -24,3 +22,62 @@ p.fuente-enlace {
     font-size: 40px;
     text-align: center;
 }
+h2 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+p.centrado {
+    font-family: 'Train One', cursive;
+    font-size: 3.3em;
+}
+.fuente-caveat {
+    font-family: 'Caveat', arial, sans-serif;
+    font-size: 40px;
+}
+.peso-fuente {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    /* font-weight: 600; */
+   /*  font-weight: 900; */
+}
+.fuente-crazy {
+    font-size: 2em;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: red;
+    font-style: normal;
+}
+.color-nombre-1 {
+    text-align: center;
+    font-size: 2.5em;
+    color:darkcyan;
+}
+.color-nombre-4 {
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(250,220,66);
+}
+.color-nombre-7 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #DE3510;
+}
+.color-nombre-10 {
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(37, 150, 190);
+}
+/* caveat-600 - latin */
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/caveat-v10-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/caveat-v10-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/caveat-v10-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/caveat-v10-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/caveat-v10-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/caveat-v10-latin-600.svg#Caveat') format('svg'); /* Legacy iOS */
+  }
