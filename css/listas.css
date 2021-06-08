@@ -1,0 +1,22 @@
+ul {
+    font-size: 1.6em;
+    text-align: right;
+    background: rgb(64,64,64);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+li {
+    display: inline-block;
+    padding: 20px;
+}
+.menu-contactenos {
+    margin-right: 30px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 1.04em;
+}
