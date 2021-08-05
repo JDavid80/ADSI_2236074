@@ -2,7 +2,7 @@
     width: 70%;
     margin: 0 auto;
 }
-#nav-bar {
+#nav-bar-vertical {
     display: inline-block;
 }
 li {
@@ -13,7 +13,6 @@ li {
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
-/*     font-weight: 400; */
 }
 li:hover {
     background-color: rgb(64,64,64);
@@ -35,7 +34,6 @@ a {
     border-radius: 0;
     font-weight: 500;
     font-size: 0.9em;
-
 }
 .item-horizontal:hover {
     background: rgb(220,220,220);
