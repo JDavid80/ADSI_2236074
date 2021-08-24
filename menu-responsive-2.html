@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Responsive 2</title>
     <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/menu-responsive-2.css">
 </head>
 <body>
-    <ul>
-        <li>Home</li>
-    </ul>
+    <header>
+        <div class=titulo>
+            <h1>Mi Empresa</h1>
+        </div>
+        <div class="menu-bar">
+            <a class="bt-menu" href="#"><span class="icon-menu"></span>Menú</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><span class="icon-home icono"></span>Inicio</a></li>
+                <li><a href="#"><span class="icon-box icono"></span>Productos<span class="icon-chevron-small-down"></span></a>
+                    <ul class="children">
+                        <li><a href="#">Hogar<span class="icon-dot-single"></span></a></li>
+                        <li><a href="#">Oficina<span class="icon-dot-single"></span></a></li>
+                        <li><a href="#">Otros<span class="icon-dot-single"></span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="icon-phone icono"></span>Contáctanos</a></li>
+                <li><a href="#"><span class="icon-v-card icono"></span>Quienes Somos</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
