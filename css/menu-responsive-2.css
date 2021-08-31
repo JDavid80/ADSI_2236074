@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: gainsboro;
+}
+header {
+    width: 100%;
+}
+nav {
+    background: rgb(222,1,8, .9);
+    width: 100%;
+}
+h1 {
+    font-size: 2.2em;
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+ul {
+    padding: 20px;
+    text-align: right;
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+}
+.icono {
+    margin-right: 7px;
+}
+.menu-bar {
+    display: none;
+}
+.children {
+    display: none;
+    position: absolute;
+    background: #011826;
+    text-align: left;
+    
+}
+ul li:hover .children {
+    display: block;
+    text-align: left; 
+}
+.children li {
+    display: block;
+    border-bottom: 1px solid rgb(255,255,255,.5);
+}
+.children li a  {
+    display: block;
+    width: 100%;
+}
+.children li a span {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+}
+@media only screen and (max-width: 850px) {
+    body {
+        padding-top: 80px;
+    }
+    .menu-bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: rgb(222,1,8); 
+    }
+    .titulo {
+        display: none;
+    }
+    .bt-menu {
+        display: block;
+        padding: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    .menu-bar span {
+        float: right;
+        font-size: 40px;
+    }
+    nav {
+        background-color: rgb(222,1,8); 
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        /* right: 100%; */
+        margin: 0;
+    }
+    nav ul {
+        text-align: left;
+    }
+    nav ul li {
+        display: block;
+        border-bottom: 1px solid rgb(255,255,255,.5);
+    }
+    nav ul li.children {
+        position: relative;
+        width: 100%;
+    }
+    nav ul li a {
+        padding: 12px;
+        display: block;
+    }
+    .icon-chevron-small-down {
+        float: right;
+    }
+    /* nav ul li:hover .children {
+        display: none;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
