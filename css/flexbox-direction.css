@@ -1,0 +1,28 @@
+.container-flex-1 {
+    display: flex;
+    flex-direction: column;
+    background: darkcyan;
+}
+.container-flex-2 {
+    display: flex;
+    background: darkcyan;
+    flex-direction: row;
+}
+.container-flex-3 {
+    display: flex;
+    flex-direction: column-reverse;
+    background: darkcyan;
+}
+.container-flex-4 {
+    display: flex;
+    background: darkcyan;
+    flex-direction: row-reverse;
+}
+.item-flex {
+    width: 150px;
+    height: 150px;
+    background-color: goldenrod;
+    margin: 20px;
+    font-size: 1.5em;
+    color: white;
+}
