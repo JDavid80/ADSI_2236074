@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    padding-top: 20px;
+    display: grid;
+    max-width: 1260px;
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+    grid-template: "encabezado       menu            menu"      100px
+                   "img-principal    img-principal   img-principal"  350px
+                   "article-1        article-2       article-3 "     auto
+                   "article-4        article-5       article-6 "     auto /
+                   1fr               1fr             1fr;
+}
+.encabezado, .menu , 
+.img-principal, .articulo, .img-article {
+    border-radius: 10px;
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img-article  {
+    width: 400px;
+    height: 300px;
+    background: rgb(64,64,64);
+    margin-bottom: 10px;
+}
+.encabezado {
+    background: rgb(221,8,80);
+    grid-area: encabezado;
+}
+.menu {
+    background: khaki;
+    grid-area: menu;
+}
+
+.img-principal {
+    background: darkcyan;
+    grid-area: img-principal;
+}
+.article-1, .article-2, .article-3, 
+.article-4, .article-5, .article-6 {
+    color: rgb(24,24,24,.8);
+    font-size: 1.2em;
+    text-align: justify;
+}
+.article-1 {
+    grid-area: article-1;
+}
+.article-2 {
+    grid-area: article-2;
+}
+.article-3 {
+    grid-area: article-3;
+}
+.article-4 {
+    grid-area: article-4;
+}
+.article-5 {
+    grid-area: article-5;
+}
+.article-6 {
+    grid-area: article-6;
+}
+.articles-spa {
+    display: inline;
+}
+@media (max-width: 1620px) {
+    .main-container {
+        width: 90%;
+    }
+}
+@media (max-width: 1420px) {
+    .main-container {
+        width: 95%;
+    }
+    .articles  {
+        width: 100%;
+        max-width: 370px;
+        margin-bottom: 10px;
+    }
+    .img-article {
+        width: 100%;
+        max-width: 370px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .main-container {
+        grid-template: "encabezado            menu"           100px
+                       "img-principal         img-principal"        350px
+                       "article-1             article-2"            auto
+                       "article-3             article-4"            auto
+                       "article-5             article-6"            auto /
+                        1fr                    1fr;
+    }
+    .articles  {
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+    .img-article {
+        max-width: 400px;
+    }
+  
+}
+@media only screen and (max-width: 600px) {
+    .main-container {
+        grid-template: "encabezado"       100px
+                        "menu"             100px     
+                        "img-principal"    350px
+                        "article-1"        auto
+                        "article-2"        auto
+                        "article-3"        auto
+                        "article-4"        auto
+                        "article-5"        auto
+                        "article-6"        auto /
+                         1fr;
+        }
+        .articles  {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+        .img-article {
+            width: 100%;
+            max-width: 500px;
+        }
+  
+}
+
