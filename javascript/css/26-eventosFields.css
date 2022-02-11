@@ -1,6 +1,13 @@
 input[type="text"] {
-    margin-top: 100px;
-    margin-left: 100px;
     width: 200px;
-    height: 80px
+    height: 40px
+}
+.style-buton {
+    height: 50px;
+    display: block;
+    width: 80px;
+}
+div {
+     margin-top: 100px;
+    margin-left: 100px;
 }

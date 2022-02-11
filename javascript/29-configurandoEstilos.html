@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/29-configurandoEstilos.js"></script>
+</head>
+<body>
+    <h1>Configurando estilos desde Javascript</h1>
+    <p id="parrafo-principal" onmouseover="fuente_grande();" onmouseleave="fuente_normal();">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nemo modi? Amet unde, itaque similique praesentium vero inventore aliquid quo?</p>
+    <h2>Imagen desaparece al pasar mouse por encima</h2>
+    <img id="tren-suiza" src="img/tren_suiza_300x200.jpg" alt="Tren" onmouseenter="img_invisible();">
+    <img id="img-kioto" src="img/kioto_400x257.jpg" alt="Kyoto"
+    onmouseleave="retornar_margenes();" onmouseover="conf_margenes();">
+</body>
+</html>
